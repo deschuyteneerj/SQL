@@ -1,0 +1,51 @@
+SELECT FROM
+
+DRILL 1 (météo) http://sqlfiddle.com/#!9/6ddfd/2
+
+Select ville from météo;
+Select ville, haut from météo;
+Select ville, bas from météo;
+Select ville from météo where haut>27;
+Select ville from météo where bas<=15;
+Select ville from météo where bas=15;
+Select ville from météo where bas<>15;
+Select ville from météo where ville like 'Br%';
+Select ville from météo where 26<haut and haut<28;
+Select ville from météo where bas=14 or bas=16;
+Select ville from météo where haut>=26 and bas<14;
+
+DRILL 2 (becode) http://sqlfiddle.com/#!9/3c37f/1
+
+Select * from octocats;
+Select firstname from octocats;
+Select firstname, lastname, age from octocats;
+Select * from octocats where lastname like 'N%';
+Select firstname from octocats where promo='promo1-central';
+Select firstname, lastname, birthdate from octocats where promo='promo1-anderlecht';
+
+DRILL 3 (becode) http://sqlfiddle.com/#!9/3c37f/1
+
+select firstname, lastname from octocats order by firstname asc;
+select firstname, lastname from octocats order by lastname desc;
+select firstname, lastname, age from octocats order by age asc;
+select firstname, lastname, age from octocats order by age desc;
+select firstname, lastname, age from octocats where promo='promo1-central' order by age desc;
+select firstname, lastname, age from octocats where promo='promo1-central' and age>=23 and age<=28;
+select firstname, lastname, age from octocats where promo='promo1-central' and age>=25 and age<=35 order by age asc;
+select firstname, lastname, age from octocats where promo='promo1-central' and age>=25 and age<=35 and gender='m' order by age asc;
+select firstname, lastname, age from octocats where promo like '%central' order by age desc limit 0,1;
+
+DRILL 4 (becode) http://sqlfiddle.com/#!9/3c37f/1
+
+select count(*) from octocats where gender='m';
+select count(*) from octocats where gender='f' and promo='promo1-central';
+select count(*) from octocats where gender='m' and promo='promo1-central';
+
+DRILL 5 (becode2) http://sqlfiddle.com/#!9/6b056/2
+
+Select year(birthdate), firstname from octocats;
+
+DRILL 6 (météo) http://sqlfiddle.com/#!9/6ddfd/2
+
+select max(haut) from météo;
+select min(bas) from météo;

@@ -1,0 +1,3 @@
+DRILL (météo) http://sqlfiddle.com/#!9/85d333/1
+
+INSERT INTO Météo (ville, haut, bas) values ('Nivelles', 0, 40);

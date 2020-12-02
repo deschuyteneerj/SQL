@@ -40,7 +40,7 @@ echo '<form action="" method="post"><table>';
 
 while ($data = $result->fetch()) {
     echo '<tr>';
-    echo '<td style="border: 1px solid black">'.$data['PK'].'</td>';
+        echo '<td style="border: 1px solid black">'.$data['PK'].'</td>';
         echo '<td style="border: 1px solid black">'.$data['ville'].'</td>';
         echo '<td style="border: 1px solid black">'.$data['bas'].'</td>';
         echo '<td style="border: 1px solid black">'.$data['haut'].'</td>';

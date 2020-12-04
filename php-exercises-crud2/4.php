@@ -10,7 +10,6 @@ catch(Exception $e){
 if (isset($_POST['firstName'],$_POST['lastName'])){
     if ($_POST['card']=="on"){$_POST['card']=1;}
     else {$_POST['card']=0;}
-    echo "UPDATE clients SET lastName='".$_POST['lastName']."', firstName='".$_POST['firstName']."', birthDate='".$_POST['birthDate']."', card=".$_POST['card'].", cardNumber=".$_POST['cardNumber']." WHERE firstName='".$_POST['firstName']."' AND lastName='".$_POST['lastName']."';";
     $result = $db->query("UPDATE clients SET lastName='".$_POST['lastName']."', firstName='".$_POST['firstName']."', birthDate='".$_POST['birthDate']."', card=".$_POST['card'].", cardNumber=".$_POST['cardNumber']." WHERE firstName='".$_POST['firstName']."' AND lastName='".$_POST['lastName']."';");
     $result->closeCursor();
 }

@@ -7,6 +7,7 @@ try{
 catch(Exception $e){
     die('Erreur : '.$e->getMessage());
 }
+
 if (isset($_POST['firstName'],$_POST['lastName'])){
     if ($_POST['card']=="on"){$_POST['card']=1;}
     else {$_POST['card']=0;}

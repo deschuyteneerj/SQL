@@ -22,7 +22,6 @@ if(isset($_POST['delete'])){
     echo substr($string, 0, -1);
     $result = $bdd->query("DELETE FROM Météo WHERE PK IN (".substr($string, 0, -1).")");
     $result->closeCursor();
-
     $_POST = array();
     header('Location: index.php');
 }
@@ -56,9 +55,12 @@ $result->closeCursor();
 <form action="" method="post">
     <label for="ville">Ville:</label>
     <input type="text" id="ville" name="ville"><br>
+
     <label for="bas">Minima:</label>
     <input type="text" id="bas" name="bas"><br>
+
     <label for="haut">Maxima:</label>
     <input type="text" id="haut" name="haut"><br>
+    
     <input type="submit" value="Submit">
 </form>

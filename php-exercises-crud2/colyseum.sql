@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost:3306
--- Généré le : jeu. 03 déc. 2020 à 17:00
+-- Généré le : ven. 04 déc. 2020 à 15:10
 -- Version du serveur :  8.0.22-0ubuntu0.20.04.3
 -- Version de PHP : 7.4.3
 
@@ -139,7 +139,7 @@ INSERT INTO `clients` (`id`, `lastName`, `firstName`, `birthDate`, `card`, `card
 (2, 'Dean', 'Ori', '1973-11-23', 0, NULL),
 (3, 'Sharpe', 'Nora', '1983-03-10', 0, NULL),
 (4, 'Hampton', 'Wade', '2000-03-05', 1, 2022),
-(5, 'Conner', 'Kibo', '1979-11-04', 0, NULL),
+(5, 'Monteiro', 'Nicolas', '1979-11-04', 0, NULL),
 (6, 'Klein', 'Hilary', '1972-12-16', 0, NULL),
 (7, 'Tyler', 'Lawrence', '1996-05-13', 0, NULL),
 (8, 'Dudley', 'Tanya', '1966-12-28', 0, NULL),
@@ -236,7 +236,7 @@ CREATE TABLE `shows` (
 --
 
 INSERT INTO `shows` (`id`, `title`, `performer`, `date`, `showTypesId`, `firstGenresId`, `secondGenreId`, `duration`, `startTime`) VALUES
-(1, 'Vestibulum accumsan', 'Osborn', '2016-10-15', 1, 4, 3, '02:00:00', '20:00:00'),
+(1, 'Vestibulum accumsan', 'Osborn', '2016-10-15', 1, 21, 21, '00:00:00', '00:00:00'),
 (2, 'Venenatis lacus', 'Dale', '2017-01-05', 1, 1, 8, '02:00:00', '20:00:00'),
 (3, 'Sem egestas', 'Juarez', '2017-02-01', 1, 8, 21, '02:00:00', '20:00:00'),
 (4, 'Nec urna', 'Tate', '2018-05-02', 1, 3, 21, '02:00:00', '20:00:00'),
